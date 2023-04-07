@@ -58,7 +58,7 @@ double cosn(double x, uint16_t count) {
   double d = x;
   double cosn = 0;
   for (int i = 0; i < count; i++) {
-    cosn = 1-cosn*g*d/f;
+    cos = 1-cos*g*d/f;
     d = d*pow(x, 2);
     f = f*(m+1)*(m+2);
     m+=2;
