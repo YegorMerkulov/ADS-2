@@ -7,7 +7,7 @@
 
 
 double pown(double value, uint16_t n) {
-  pow = value;
+  uint64_t pow = value;
   for (int i = 0; i < n; i++) {
     pow*= value;
   }
