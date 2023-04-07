@@ -39,9 +39,8 @@ double sinn(double x, uint16_t count) {
 }
 
 double cosn(double x, uint16_t count) {
-  double cos = 0.0;
-  for (int i = 0; i < count; i++) {
-    cos += calcItem(x, 2*i) * pown(-1, i);
-  }
+  double cos = 0;
+  for (int i = 1; i <= count; i += 1)
+    cos += (pown(-1, i - 1) * calcItem(x, 2 * i - 2));
   return cos;
 }
