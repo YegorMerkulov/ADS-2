@@ -6,17 +6,15 @@
 
 double pown(double value, uint16_t n) {
     double result = pow(value, n);
+    return result;
 }
 
 uint64_t fact(uint16_t n) {
-    if (n < 0) {
-      return "error";
-    } else if (n == 0) {
+    if (n == 0) {
       return 1;
     } else {
       return n * fact(n - 1);
     }
-  }
 }
 
 double calcItem(double x, uint16_t n) {
