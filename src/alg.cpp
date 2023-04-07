@@ -20,7 +20,7 @@ uint64_t fact(uint16_t n) {
 double calcItem(double x, uint16_t n) {
   int count = 0;
   while (x != 0) {
-    x- = n;
+    x = x-n;
     count+=1;
   }
   return count;
@@ -48,6 +48,7 @@ double sinn(double x, uint16_t count) {
     m = m+2;
     g = -g;
   }
+    return sin;
 }
 
 double cosn(double x, uint16_t count) {
@@ -58,9 +59,10 @@ double cosn(double x, uint16_t count) {
   double cosn = 0;
   for (int i = 0; i < count; i++) {
     cosn = 1-cosn*g*d/f;
-    d = d*x**2;
+    d = d*pow(x, 2);
     f = f*(m+1)*(m+2);
     m+=2;
     g = -g;
   }
+    return cos;
 }
