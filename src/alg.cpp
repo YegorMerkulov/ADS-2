@@ -40,7 +40,7 @@ double sinn(double x, uint16_t count) {
 
 double cosn(double x, uint16_t count) {
   double cos = 0.0;
-  for (int i = 0; i < count; i++) {
+  for (uint16_t i = 0; i < count; i++) {
     cos += calcItem(x, 2*i) * pow(-1, i);
   }
   return cos;
