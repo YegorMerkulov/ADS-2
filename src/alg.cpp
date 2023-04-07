@@ -7,7 +7,11 @@
 
 
 double pown(double value, uint16_t n) {
-  return pow(value, n);
+  pow = value;
+  for (int i = 0; i < n; i++) {
+    pow*= value;
+  }
+  return pow;
 }
 
 uint64_t fact(uint16_t n) {
