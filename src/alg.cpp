@@ -22,7 +22,7 @@ uint64_t fact(uint16_t n) {
 double calcItem(double x, uint16_t n) {
   int count = 0;
   while (x != 0) {
-    x-=n;
+    x- = n;
     count+=1;
   }
   return count;
