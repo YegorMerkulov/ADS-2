@@ -1,18 +1,18 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
-#include "alg.h"
 #include <cmath>
+#include "alg.h"
 
 
 double pown(double value, uint16_t n) {
-    double result = pow(x,n);
+    double result = pow(x, n);
 }
 
 uint64_t fact(uint16_t n) {
     if (n < 0) {
       return "error";
     } else if (n == 0) {
-      return 1; 
+      return 1;
     } else {
       return n * fact(n - 1);
     }
@@ -29,21 +29,21 @@ double calcItem(double x, uint16_t n) {
 }
 
 double expn(double x, uint16_t count) {
-   double result = 1.0;
-   for (int i = 1; i <= count; i++) {
-     result+=pow(x,i)/i;
-   }
+    double result = 1.0;
+    for (int i = 1; i <= count; i++) {
+        result+=pow(x, i)/i;
+    }
     return result;
 }
 
 double sinn(double x, uint16_t count) {
   int n = 0;
   int g = 1;
-  long int f = 1;
+  uint64_t f = 1;
   int m = 1;
   double d = x;
   double sin = 0;
-  for(int i = 0; i<n; i++){
+  for (int i = 0; i < n; i++) {
     sin = sin+g*d/f;
     d = d*x*x;
     f = f*(m+1)*(m+2);
@@ -54,7 +54,7 @@ double sinn(double x, uint16_t count) {
 
 double cosn(double x, uint16_t count) {
   int g = 1;
-  long int f = 1;
+  uint64_t f = 1;
   int m = 0;
   double d = x;
   double cosn = 0;
