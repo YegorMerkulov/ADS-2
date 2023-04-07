@@ -35,7 +35,7 @@ double sinn(double x, uint16_t count) {
   for (int i = 0; i < count; i++) {
     sin += calcItem(x, 2*i+1) * pow(-1, i);
   }
-  return s;
+  return sin;
 }
 
 double cosn(double x, uint16_t count) {
